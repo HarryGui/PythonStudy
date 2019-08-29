@@ -1,0 +1,17 @@
+quest1=input('请问您需要什么帮助呢？A需要orB不需要')
+if quest1=='需要':
+    quest2 = input('请问您需要什么帮助呢？1 存取款；2 货币兑换；3 咨询：')
+    if quest2 == '2':
+        money = float(input('金加隆和人民币的兑换率为1:51.3，即一金加隆=51.3人民币，请问您需要兑换多少金加隆呢？'))
+        print('好的，我知道了，您需要兑换' + str(money) + '金加隆。')
+        print('那么，您需要付给我' + str(money * 51.3 )+ '人民币。')
+    elif quest2 == '1':
+        print('请转到存取款柜台')
+    elif quest2 == '3':
+        print('请转到咨询柜台')
+    else:
+        print('输入错误')
+elif quest1 =='不需要':
+    print('好的，再见')
+else:
+    print('输入错误')
